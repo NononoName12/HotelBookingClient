@@ -45,10 +45,13 @@ const Booking = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:5000", {
-          method: "GET",
-          credentials: "include", // Bao gồm cookie trong yêu cầu
-        });
+        const response = await fetch(
+          "https://hotelbookingserver-h6pm.onrender.com",
+          {
+            method: "GET",
+            credentials: "include", // Bao gồm cookie trong yêu cầu
+          }
+        );
         if (!response.ok) {
           if (response.status === 401) {
             // Nếu nhận được mã lỗi 401, chuyển hướng đến trang login
@@ -174,7 +177,7 @@ const Booking = () => {
           setLoadingRoom(true);
           try {
             const response = await fetch(
-              "http://localhost:5000/hotels/checkRoomAvailable",
+              "https://hotelbookingserver-h6pm.onrender.com/hotels/checkRoomAvailable",
               {
                 method: "POST", // Hoặc 'PUT' nếu bạn muốn cập nhật dữ liệu
                 headers: {
@@ -261,14 +264,17 @@ const Booking = () => {
       };
       console.log(inputBooking);
       try {
-        const response = await fetch("http://localhost:5000/hotels/booking", {
-          method: "POST", // Hoặc 'PUT' nếu bạn muốn cập nhật dữ liệu
-          headers: {
-            "Content-Type": "application/json", // Chỉ định định dạng dữ liệu
-          },
-          body: JSON.stringify(inputBooking), // Chuyển đổi đối tượng dữ liệu thành chuỗi JSON
-          credentials: "include", // Nếu cần gửi cookie
-        });
+        const response = await fetch(
+          "https://hotelbookingserver-h6pm.onrender.com/hotels/booking",
+          {
+            method: "POST", // Hoặc 'PUT' nếu bạn muốn cập nhật dữ liệu
+            headers: {
+              "Content-Type": "application/json", // Chỉ định định dạng dữ liệu
+            },
+            body: JSON.stringify(inputBooking), // Chuyển đổi đối tượng dữ liệu thành chuỗi JSON
+            credentials: "include", // Nếu cần gửi cookie
+          }
+        );
 
         const responseData = await response.json();
         if (!response.ok) {

@@ -22,7 +22,7 @@ const Transactions = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:5000", {
+        const response = await fetch("https://hotelbookingserver-h6pm.onrender.com", {
           method: "GET",
           credentials: "include", // Bao gồm cookie trong yêu cầu
         });
@@ -46,7 +46,7 @@ const Transactions = () => {
       setLoading(true);
       try {
         const response = await fetch(
-          `http://localhost:5000/hotels/transactions`,
+          `https://hotelbookingserver-h6pm.onrender.com/hotels/transactions`,
           {
             method: "POST",
             headers: {

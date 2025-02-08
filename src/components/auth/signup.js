@@ -23,14 +23,17 @@ const Signup = () => {
   const handleSubmit = async () => {
     console.log("Signup with", inputValue);
     try {
-      const response = await fetch("http://localhost:5000/auth/signup", {
-        method: "POST", // Hoặc 'PUT' nếu bạn muốn cập nhật dữ liệu
-        headers: {
-          "Content-Type": "application/json", // Chỉ định định dạng dữ liệu
-        },
-        body: JSON.stringify(inputValue), // Chuyển đổi đối tượng dữ liệu thành chuỗi JSON
-        credentials: 'include', // Nếu cần gửi cookie
-      });
+      const response = await fetch(
+        "https://hotelbookingserver-h6pm.onrender.com/auth/signup",
+        {
+          method: "POST", // Hoặc 'PUT' nếu bạn muốn cập nhật dữ liệu
+          headers: {
+            "Content-Type": "application/json", // Chỉ định định dạng dữ liệu
+          },
+          body: JSON.stringify(inputValue), // Chuyển đổi đối tượng dữ liệu thành chuỗi JSON
+          credentials: "include", // Nếu cần gửi cookie
+        }
+      );
 
       const responseData = await response.json();
 

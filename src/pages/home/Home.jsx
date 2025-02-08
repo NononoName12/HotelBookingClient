@@ -22,10 +22,13 @@ const Home = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:5000", {
-          method: "GET",
-          credentials: "include", // Bao gồm cookie trong yêu cầu
-        });
+        const response = await fetch(
+          "https://hotelbookingserver-h6pm.onrender.com",
+          {
+            method: "GET",
+            credentials: "include", // Bao gồm cookie trong yêu cầu
+          }
+        );
         if (!response.ok) {
           if (response.status === 401) {
             // Nếu nhận được mã lỗi 401, chuyển hướng đến trang login
