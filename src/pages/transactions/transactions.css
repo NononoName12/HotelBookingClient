@@ -1,0 +1,31 @@
+/* BookingTable.css */
+.booking-table {
+  margin: 20px;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+.booking-table table {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+}
+
+.booking-table th,
+.booking-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.booking-table th {
+  background-color: #0688ce;
+  color: white;
+}
+
+.booking-table tr:nth-child(odd) {
+  background-color: #f2f2f2; /* Màu cho dòng lẻ */
+}
+.booking-table tr:nth-child(even) {
+  background-color: #ffffff; /* Màu cho dòng chẵn */
+}

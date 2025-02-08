@@ -1,0 +1,38 @@
+.navbar {
+  height: 50px;
+  background-color: #003580;
+  display: flex;
+  justify-content: center;
+}
+
+.navContainer {
+  width: 100%;
+  max-width: 1024px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 500;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.navItems {
+  display: flex; /* Sử dụng Flexbox để sắp xếp các nút điều hướng */
+  align-items: center; /* Căn chỉnh các phần tử theo chiều dọc */
+  gap: 10px; /* Khoảng cách giữa các nút */
+}
+
+.navButton {
+  background-color: white; /* Màu nền của nút */
+  border: none;
+  color: blue;
+  padding: 10px 15px; /* Khoảng cách trong nút */
+  cursor: pointer;
+  border-radius: 4px; /* Bo góc nút */
+}

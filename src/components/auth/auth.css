@@ -1,0 +1,70 @@
+/* Tổng thể container để căn giữa form */
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 750px; /* Chiều cao 100% viewport */
+  background-color: #f8f9fa;
+}
+
+/* Cấu trúc form */
+.auth-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+/* Tựa đề form */
+.auth-form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+/* Các nhóm form input */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Input field */
+.form-group input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: #1c7ed6;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background-color: #339af0;
+}
+
+.error {
+  color: red;
+  font-size: 0.875em;
+  text-align: center;
+  margin-bottom: 10px;
+}
