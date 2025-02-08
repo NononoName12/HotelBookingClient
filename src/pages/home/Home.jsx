@@ -23,7 +23,7 @@ const Home = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://hotelbookingserver-h6pm.onrender.com",
+          "https://hotelbookingserver-877m.onrender.com",
           {
             method: "GET",
             credentials: "include", // Bao gồm cookie trong yêu cầu

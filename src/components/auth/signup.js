@@ -24,7 +24,7 @@ const Signup = () => {
     console.log("Signup with", inputValue);
     try {
       const response = await fetch(
-        "https://hotelbookingserver-h6pm.onrender.com/auth/signup",
+        "https://hotelbookingserver-877m.onrender.com/auth/signup",
         {
           method: "POST", // Hoặc 'PUT' nếu bạn muốn cập nhật dữ liệu
           headers: {

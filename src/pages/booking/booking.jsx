@@ -46,7 +46,7 @@ const Booking = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://hotelbookingserver-h6pm.onrender.com",
+          "https://hotelbookingserver-877m.onrender.com",
           {
             method: "GET",
             credentials: "include", // Bao gồm cookie trong yêu cầu
@@ -177,7 +177,7 @@ const Booking = () => {
           setLoadingRoom(true);
           try {
             const response = await fetch(
-              "https://hotelbookingserver-h6pm.onrender.com/hotels/checkRoomAvailable",
+              "https://hotelbookingserver-877m.onrender.com/hotels/checkRoomAvailable",
               {
                 method: "POST", // Hoặc 'PUT' nếu bạn muốn cập nhật dữ liệu
                 headers: {
@@ -265,7 +265,7 @@ const Booking = () => {
       console.log(inputBooking);
       try {
         const response = await fetch(
-          "https://hotelbookingserver-h6pm.onrender.com/hotels/booking",
+          "https://hotelbookingserver-877m.onrender.com/hotels/booking",
           {
             method: "POST", // Hoặc 'PUT' nếu bạn muốn cập nhật dữ liệu
             headers: {

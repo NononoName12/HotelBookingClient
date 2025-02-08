@@ -20,7 +20,7 @@ const Navbar = ({ loading, error, isLogin, user }) => {
   const handleLogout = async () => {
     try {
       const response = await fetch(
-        "https://hotelbookingserver-h6pm.onrender.com/auth/logout",
+        "https://hotelbookingserver-877m.onrender.com/auth/logout",
         {
           method: "POST",
           credentials: "include", // Đảm bảo gửi cookie nếu cần

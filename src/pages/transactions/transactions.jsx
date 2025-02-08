@@ -22,10 +22,13 @@ const Transactions = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("https://hotelbookingserver-h6pm.onrender.com", {
-          method: "GET",
-          credentials: "include", // Bao gồm cookie trong yêu cầu
-        });
+        const response = await fetch(
+          "https://hotelbookingserver-877m.onrender.com",
+          {
+            method: "GET",
+            credentials: "include", // Bao gồm cookie trong yêu cầu
+          }
+        );
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
@@ -46,7 +49,7 @@ const Transactions = () => {
       setLoading(true);
       try {
         const response = await fetch(
-          `https://hotelbookingserver-h6pm.onrender.com/hotels/transactions`,
+          `https://hotelbookingserver-877m.onrender.com/hotels/transactions`,
           {
             method: "POST",
             headers: {

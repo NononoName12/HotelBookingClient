@@ -30,7 +30,7 @@ const List = () => {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          "https://hotelbookingserver-h6pm.onrender.com",
+          "https://hotelbookingserver-877m.onrender.com",
           {
             method: "GET",
             credentials: "include", // Bao gồm cookie trong yêu cầu
@@ -60,7 +60,7 @@ const List = () => {
       setLoading(true); // Bắt đầu loading
       try {
         const response = await fetch(
-          "https://hotelbookingserver-h6pm.onrender.com/hotels/search",
+          "https://hotelbookingserver-877m.onrender.com/hotels/search",
           {
             method: "POST",
             // credentials: "include", // Bao gồm cookie trong yêu cầu
